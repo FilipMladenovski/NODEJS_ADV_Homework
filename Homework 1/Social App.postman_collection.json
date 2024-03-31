@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "526a3ec0-00a6-4de8-b3ab-04d241feebbe",
+		"name": "Social App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33333129"
+	},
+	"item": [
+		{
+			"name": "Post creation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Sample Post Title\",\r\n    \"content\": \"This is a sample post content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\r\n    \"author\": \"Filip Mladenovski\" \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post creation Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Sample Post Title No.2\",\r\n    \"content\": \"This is a sample post content no.2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\r\n    \"author\": \"John John\" \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Sample Post Title\",\r\n    \"content\": \"This is a sample post content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\r\n    \"author\": \"Filip Mladenovski\" \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get post by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Sample Post Title\",\r\n    \"content\": \"This is a sample post content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\r\n    \"author\": \"Filip Mladenovski\" \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/post/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"post",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "66095f1ff04686eec904c4ae"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Updated post\",\r\n    \"content\": \"This is the updated post\",\r\n    \"author\": \"Doe Doe\" \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/post/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"post",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "66095fd9f04686eec904c4b0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
